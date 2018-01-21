@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>妈妈买</title>
+    <link rel="stylesheet" href="./lib/mui/css/mui.css">
+    <link rel="stylesheet" href="./lib/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div class="mm_container">
+        <div class="mm_header" style="background:#f4483e">
+            <div class="appdown back fl">
+                <a href="javascript:history.back();">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+            </div>
+            <div class="appdown fr">
+                <a href="javascript:;">
+                    <img src="images/header_app.png" alt="">
+                </a>
+            </div>
+            <h3>
+
+                肯德基优惠券
+
+
+            </h3>
+        </div>
+        <div class="mm_mian">
+
+            <!--s=优惠卷表头-->
+            <div class="coupon">
+
+                --点餐前出示手机中的优惠券，即可享受优惠--
+
+            </div>
+            <!--e=优惠卷表头-->
+            <!--s=product-->
+            <div class="recommen-product-list product-list cu-list clearfix">
+                <ul class="mm_coupon clearfix">
+
+
+                    <!--等待填坑 -->
+
+
+
+
+                </ul>
+
+                <!--e=product-->
+                <!--s=footer-->
+
+            </div>
+            <!--e=footer-->
+            <div class="footer clearfix">
+                <div class="foot_top">
+                    <a href="javascript:;">登录</a>
+                    <a href="javascript:;">注册</a>
+                    <a href="#">
+                        <img src="http://www.zuyushop.com/wap/images/top.jpg" width="15" height="15">返回顶部
+                    </a>
+                </div>
+                <p>
+                    <a href="javascript:;" style="color: Red;">手机APP下载</a>
+                    <a href="index.html">慢慢买手机版</a> -- 掌上比价平台
+                </p>
+                <p>m.manmanbuy.com</p>
+            </div>
+
+
+        </div>
+    </div>
+
+
+<!--遮罩层的轮播图-->
+<div class="overspread">
+
+
+</div>
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+<script type="text/html" id="tpl">
+    {{each result v i }}
+    <li data-id="{{v.couponProductImg}}">
+        <div class="mm_coupon_box clearfix ">
+            <div class="mm_coupon_img fl">
+                {{@v.couponProductImg}}
+
+            </div>
+            <div class="mm_coupon_text  ">
+                <p class="mm_coupon_text_title">{{v.couponProductName}}</p>
+                <p class="mm_coupon_money">{{v.couponProductPrice}}</p>
+                <p class="mm_coupon_time">{{v.couponProductTime}}</p>
+                <i class="fa fa-angle-right "></i>
+            </div>
+        </div>
+    </li>
+    {{/each}}
+</script>
+
+
+
+<script type="text/html" id="tpl-lu">
+    <div class="mui-slider">
+            <div class="mui-slider-group mui-slider-loop">
+              <!--支持循环，需要重复图片节点-->
+              <div class="mui-slider-item mui-slider-item-duplicate"><a href="#">  {{@list}}</a></div>
+              <div class="mui-slider-item"><a href="#">  {{@list}}</a></div>
+              <!--支持循环，需要重复图片节点-->
+              <div class="mui-slider-item mui-slider-item-duplicate"><a href="#">  {{@list}}</a></div>
+            </div>
+</script>
+
+
+
+
+
+
+<script src="./lib/jquery/jquery.min.js"></script>
+<script src="./lib/zepto/zepto.min.js"></script>
+<script src="./lib/mui/js/mui.min.js"></script>
+<script src="./lib/template-web.js"></script>
+<script src="./js/couponproduct.js"></script>
+
+</html>

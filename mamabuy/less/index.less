@@ -1,0 +1,290 @@
+@charset "Utf-8";
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: block;
+    visibility: hidden;
+    height: 0;
+    line-height: 0;
+    clear: both;
+}
+li,ul{
+list-style: none;
+}
+img {
+    display: block;
+    width: 100%;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+//适配屏幕
+//1rem=40px
+.adopter(@width: 320px) {
+    @media screen and(min-width: @width) {
+        html {
+            font-size: round(@width/24, 2);
+        }
+    }
+}
+
+.adopter(320px);
+.adopter(360px);
+.adopter(375px);
+.adopter(384px);
+.adopter(400px);
+.adopter(414px);
+.adopter(424px);
+.adopter(460px);
+.adopter(480px);
+.adopter(540px);
+.adopter(720px);
+.adopter(750px);
+.adopter(830px);
+.adopter(960px);
+
+
+
+
+
+
+html,
+body {
+    height: 100%;
+    font-size: 960/24px;
+    ;
+}
+
+.mm_container {
+    width: 100%;
+    max-width: 960px;
+    min-width: 320px;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+    background: #f1f1f1;
+}
+
+.mm_header {
+    height: 50/40rem;
+    background: #ff841d;
+}
+
+.logo {
+    padding: .30rem;
+    a {
+        display: block;
+        height: 25rem/40;
+        width: 186rem/40;
+        img {
+            height: 100%;
+            max-height: 25rem/40;
+            overflow: hidden;
+        }
+    }
+}
+
+.appdown {
+    padding: 7rem/40;
+    img {
+        width: 32rem/40;
+        height: 32rem/40;
+    }
+}
+
+.form-search {
+    height: 50rem/40;
+    padding: 10rem/40;
+    padding-right: 70rem/40;
+    position: relative;
+    background: #fff;
+    input {
+      width: 100%;
+        height: 30rem/40;
+        font-size: 13rem/40;
+        padding-left: 20rem/40;
+        margin-right: 50rem/40;
+        text-align: left;
+        border-radius: 15rem/40;
+    }
+    button {
+      position: absolute;
+      right: 12rem/40;
+      top: 14rem/40;
+      height: 30rem/40;
+      border-radius: 15rem/40;
+      background: #ff841d;
+      color: #fff;
+    }
+}
+.row{
+  background: #fff;
+  padding: 20rem/40 0;
+  margin-top: 10rem/40;
+  a{
+    float: left;
+    width: 25%;
+    text-align: center;
+      img{
+    width: 50rem/40;
+    margin: 0 auto;
+    
+  }
+  p{
+    font-size: 12rem/40;
+    color: #000;
+  }
+  }
+.hide{
+  display: none;
+}
+.show{
+  display: block;
+}
+}
+.list-title-content{
+  height: 35rem/40;
+  background: #ff9000;
+  font-size: 16rem/40;
+  line-height:  35rem/40;
+  color: #fff;
+  padding-left: 10rem/40;
+  img{
+    float: right;
+    width: 20rem/40;
+    height: 20rem/40;
+    margin:9rem/40 9rem/40; 
+  }
+}
+.cu-list{
+  background-color: #ffffff;
+  text-align: left;
+  font-size: 14rem/40;
+  max-width: 960px;
+  margin: 0px auto;
+  ul{
+    li{
+      padding: 14px 8px;
+      position: relative;
+      border-bottom:1px solid #e7e7e7;
+      .img_box{
+        float: left;
+        width: 100rem/40;
+        height: 100rem/40;
+      }
+    }
+  }
+  .info{
+    overflow: hidden;
+    height: 100%;
+
+    .info_title{
+      color: #333333;
+      word-break: break-all;
+      font-size: 16rem/40;
+      line-height: 19rem/40;
+      min-height: 57rem/40;
+      text-align: left;
+      font-weight: normal;
+      span{
+        color: #ff6c00;
+      }
+    }
+  }
+}
+.more-bar{
+  width: 100%;
+  text-align: center;
+  padding: 10rem/40;
+  a{
+    display: block;
+    width: 100%;
+    border: 1px solid #e7e7e7;
+    line-height: 30rem/40;
+    color: #000;
+  }
+}
+.footer{
+  margin-top: 20rem/40;
+  height: 35rem/40;
+  text-align: center;
+  .foot_top{
+    font-size: 16rem/40;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #c4c4c4;
+    line-height: 35rem/40;
+    a{ 
+        float: left;
+        width: 33.33%;
+        height: 100%;
+        border-right:1px solid #c4c4c4;
+        text-align: center;
+    }
+   img{
+     display: inline-block;
+     width: 15rem/40;
+     vertical-align: middle;   
+   }
+  }
+  p{
+    padding-top: 10rem/40;
+  }
+}
+
+
+
+
+// 带标题的头部
+h3{ 
+  margin: 0;
+  height: 1.25rem;
+  text-align: center;
+  line-height: 50rem/40;
+  margin-left: 45rem/40;
+  margin-right: 45rem/40;
+  color: #ffffff;
+}
+.back{
+  padding: 0;
+  height: 100%;
+  width: 45rem/40;
+  text-align:    center;
+  line-height: 50rem/40;
+
+  i{
+      color: #fff;
+  }
+}
+
+
+
+
+
+@import "moneyctrl";
+@import "moneyproduct";
+@import "inlanddiscount";
+@import "category";
+@import "productlist";
+@import "bijia";
+@import "coupon";
+@import "couponproduct";
+@import "baicaijia";
+@import "sitenav";
+@import "gsproduct";
+@import "brandTitle";
+@import "brand";

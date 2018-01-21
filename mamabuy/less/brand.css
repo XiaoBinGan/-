@@ -1,0 +1,98 @@
+.main-end {
+  background: #ffffff;
+}
+.mm_tv_title div {
+  font-size: .35rem;
+  font-weight: 700;
+  color: #874604;
+  padding: .2rem;
+  border-top: 2px solid #666666;
+  border-bottom: 1px solid #ccc;
+}
+.xiangqing {
+  font-size: .4rem;
+  border-bottom: 1px solid #ccc;
+  padding: .125rem;
+  padding-top: .125rem;
+}
+.xiangqing a {
+  width: 100%;
+  height: 100%;
+  color: #000;
+}
+.xiangqing p {
+  font-size: .3rem;
+}
+.xiangqing i {
+  background: #ccc;
+  color: #ffffff;
+  width: .5rem;
+  height: .5rem;
+  text-align: center;
+  overflow: hidden;
+  margin: .25rem;
+  margin-top: 0;
+}
+.xiangqing .red {
+  background: red;
+}
+.xiangqing .orange {
+  background: orange;
+}
+.xiangqing .green {
+  background: green;
+}
+.xiangqing .text {
+  overflow: hidden;
+}
+.volume_bd {
+  padding: .125rem;
+  border-bottom: 1px solid #ccc;
+}
+.volume_bd a {
+  width: 100%;
+  height: 100%;
+}
+.volume_bd .img_box {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: .125rem;
+  overflow: hidden;
+}
+.volume_bd .volume_bd_text {
+  overflow: hidden;
+}
+.volume_bd .volume_bd_text .productName {
+  color: #000;
+}
+.volume_bd .volume_bd_text .pic {
+  color: red;
+  font-size: .4rem;
+}
+.volume_bd .volume_bd_text .pic span:last-child {
+  color: orange;
+}
+.pinglun .pic {
+  padding: .25rem;
+  color: #9999;
+  font-size: .35rem;
+}
+.pinglun .pic .img_box {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.pinglun_text {
+  padding: .25rem;
+}
+.pinglun_text p {
+  color: #000;
+}
+.pinglun_text .comName span:nth-child(1) {
+  color: orange;
+}
+.pinglun_text .comName span:nth-child(2) {
+  color: #9999;
+}
+.pinglun_text .comContent {
+  border: 1px solid #eee;
+}

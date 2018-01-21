@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>妈妈买</title>
+    <link rel="stylesheet" href="./lib/mui/css/mui.css">
+    <link rel="stylesheet" href="./lib/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div class="mm_container">
+        <div class="mm_header" style="background:#f4483e">
+            <div class="appdown back fl">
+                <a href="javascript:history.back();">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+            </div>
+            <div class="appdown fr">
+                <a href="javascript:;">
+                    <img src="images/header_app.png" alt="">
+                </a>
+            </div>
+            <h3>
+
+                白菜价-淘宝内部券
+
+
+
+            </h3>
+        </div>
+        <div class="mm_mian">
+
+            <!--s=优惠卷表头-->
+            <div class="greens_title ">
+                <div class="mui-scroll-wrapper">
+                    <ul class="mui-scroll bc"></ul>
+
+
+
+
+                </div>
+            </div>
+        </div>
+        <!--e=优惠卷表头-->
+        <!--s=product-->
+        <div class="recommen-product-list product-list cu-list clearfix">
+            <ul class="mm_baicai  clearfix">
+
+
+                <!--等待填坑 -->
+
+
+
+
+            </ul>
+
+            <!--e=product-->
+            <!--s=footer-->
+
+        </div>
+        <!--e=footer-->
+        <div class="footer clearfix">
+            <div class="foot_top">
+                <a href="javascript:;">登录</a>
+                <a href="javascript:;">注册</a>
+                <a href="#">
+                    <img src="http://www.zuyushop.com/wap/images/top.jpg" width="15" height="15">返回顶部
+                </a>
+            </div>
+            <p>
+                <a href="javascript:;" style="color: Red;">手机APP下载</a>
+                <a href="index.html">慢慢买手机版</a> -- 掌上比价平台
+            </p>
+            <p>m.manmanbuy.com</p>
+        </div>
+
+
+    </div>
+    </div>
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+<script type="text/html" id="tpl">
+    <!--这里放置真实显示的DOM内容-->
+
+    {{each result v i }}
+    <li class="{{i==1?'now':''}}" data-id="{{v.titleId}}">
+        <a href="#">{{v.title}}</a>
+    </li>
+    {{/each}}
+
+</script>
+<script type="text/html" id="tpl1">
+    {{each result v i}}
+    <a href="https://detail.tmall.com?id={{v._id}}">
+    <div class="mm_baicai clearfix ">
+        <div class="mm_baicai_img fl">
+            {{@v.productImg}}
+        </div>
+        <div class="mm_baicai_text">
+            <p class="mm_baicai_title">{{@v.productName}}</p>
+            <p class="mm_baicai_money">{{@v.productPrice}}</p>
+            <p class="mm_baicai_youhui clearfix">{{@v.productCouponRemain}} </p>
+            
+            <p class="mm_baica_totter clearfix">{{@v.productCoupon }}{{@v.productHref}}</p>
+
+        </div>
+
+    </div>
+</a>
+    {{/each}}
+
+</script>
+
+
+
+
+<script src="./lib/jquery/jquery.min.js"></script>
+<script src="./lib/zepto/zepto.min.js"></script>
+<script src="./lib/mui/js/mui.min.js"></script>
+<script src="./lib/template-web.js"></script>
+<script src="./js/baicaijia.js"></script>
+
+</html>

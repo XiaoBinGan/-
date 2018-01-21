@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>妈妈买</title>
+    <link rel="stylesheet" href="./lib/mui/css/mui.css">
+    <link rel="stylesheet" href="./lib/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div class="mm_container">
+        <div class="mm_header">
+            <div class="appdown back fl">
+                <a href="javascript:history.back();">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+            </div>
+            <div class="appdown fr">
+                <a href="javascript:;">
+                    <img src="images/header_app.png" alt="">
+                </a>
+            </div>
+            <h3>
+
+                国内折扣
+
+            </h3>
+        </div>
+        <div class="mm_mian">
+            <ul class="main">
+
+            </ul>
+
+
+
+
+
+        </div>
+        <!--e=footer-->
+        <div class="footer clearfix">
+            <div class="foot_top">
+                <a href="javascript:;">登录</a>
+                <a href="javascript:;">注册</a>
+                <a href="#">
+                    <img src="http://www.zuyushop.com/wap/images/top.jpg" width="15" height="15">返回顶部
+                </a>
+            </div>
+            <p>
+                <a href="javascript:;" style="color: Red;">手机APP下载</a>
+                <a href="index.html">慢慢买手机版</a> -- 掌上比价平台
+            </p>
+            <p>m.manmanbuy.com</p>
+        </div>
+
+
+    </div>
+    </div>
+
+</body>
+
+
+
+
+
+
+
+
+
+<script type="text/html" id="tpl">
+    {{each result v i}}
+    <li>
+        <div class="product">
+           {{@ v.productImg}}
+           <p>{{v.productName}}</p>
+           <p style="color: #ff6c00">{{v.productPrice}}</p>
+           <p style="color: #a1a1a1">{{v.productFrom}} |<span>{{v.productTime}}</span>     </p>
+        </div>
+    </li>
+
+{{/each}}
+</script>
+
+
+
+
+
+
+
+
+
+<script src="./lib/jquery/jquery.min.js"></script>
+<script src="./lib/zepto/zepto.min.js"></script>
+<script src="./lib/template-web.js"></script>
+<script src="./js/getinlanddiscount.js"></script>
+
+</html>

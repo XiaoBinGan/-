@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>妈妈买</title>
+    <link rel="stylesheet" href="./lib/mui/css/mui.css">
+    <link rel="stylesheet" href="./lib/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div class="mm_container">
+        <div class="mm_header">
+            <div class="logo fl">
+                <a href="index.html">
+                    <img src="images/header_logo.png" alt="">
+                </a>
+            </div>
+            <div class="appdown fr">
+                <a href="javascript:;">
+                    <img src="images/header_app.png" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="mm_mian main-end">
+            <!--s=表单搜索-->
+            <div class="form-search">
+                <form action="#">
+                    <input type="search" placeholder="请输入你想要的商品">
+                    <button>搜索</button>
+                </form>
+            </div>
+            <!--e=表单搜索-->
+            <div class="product-list-title">
+                <a href="index.html">首页&gt;</a>
+                <a href="category.html">全部分类</a>
+            </div>
+
+            <!--s=product-->
+            <div class="mm_tv">
+                <div class="first_tv">
+                    <div class="mm_tv_title">
+                        <div>平板电视哪个牌子好</div>
+                    </div>
+                    <div class="mm_tv_body">
+                        <ul class="mm_tv_body_ul">
+<!--填坑-->
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!--e=product-->
+            <!--s=product-->
+            <div class="mm_tv_sales_volume">
+                <div class="mm_tv_title">
+                    <div>平板电视最新评论</div>
+                </div>
+                <div class="mm_tv_sales_volume_body">
+                        <div class="mm_tv_sales_volume_bd">
+<!--填坑-->
+                        </div>
+                </div>
+            </div>
+            <!--e=product-->
+            <!--s=product-->
+            <div class="pinglun">
+<!--填坑-->
+            </div>
+            <!--e=product-->
+
+            <div class="footer clearfix">
+                <div class="foot_top">
+                    <a href="javascript:;">登录</a>
+                    <a href="javascript:;">注册</a>
+                    <a href="#">
+                        <img src="http://www.zuyushop.com/wap/images/top.jpg" width="15" height="15">返回顶部
+                    </a>
+                </div>
+                <p>
+                    <a href="javascript:;" style="color: Red;">手机APP下载</a>
+                    <a href="index.html">慢慢买手机版</a> -- 掌上比价平台
+                </p>
+                <p>m.manmanbuy.com</p>
+            </div>
+
+
+        </div>
+    </div>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+<script type="text/html" id="tpl">
+    {{each result v i }}
+    <li class="xiangqing">
+        <a href="productlist.html?categoryid={{v.categoryId}}&pageid=1" >
+        <i class="fl {{i==0?'red':''}} {{i==1?'orange':''}} {{i==2?'green':''}}">
+            {{i}}
+        </i>
+        <div class="text">
+            <div>{{v.brandName}}</div>
+            <p>
+                {{v.brandInfo}}
+            </p>
+        </div>
+    </a>
+    </li>
+    {{/each}}
+</script>
+
+
+
+<script type="text/html" id="tpl2">
+    {{each result v i }}
+        <div class="volume_bd clearfix index1"
+        data-img="{{i==0?v.productImg:''}}"
+        data-text="{{i==0?v.productName:''}}"
+        >
+            <a href="bijia.html?productid={{v.productId}}">
+            <div class="img_box fl">
+                {{@v.productImg}}
+            </div>
+            <div class="volume_bd_text ">
+                    <p class="productName">{{v.productName}}</p>
+                    <p class="pic">
+                        <span>{{v.productPrice}}</span>
+                         <span class="fr">
+                             <i class="fa fa-star" ></i>
+                             <i class="fa fa-star" ></i>
+                             <i class="fa fa-star" ></i>
+                             <i class="fa fa-star" ></i>
+                             <i class="fa fa-star" ></i>
+                            </span>
+                        </p>
+                        <p>
+                            <span>{{v.productQuote}}</span>
+                            <span>{{v.productCom}}</span>
+                        </p>
+            </div>
+        </a>
+        </div>
+    {{/each}}
+    <div class="mm_tv_title">
+            <div>平板电视最新评论</div>
+        </div>
+</script>
+
+
+
+<script type="text/html" id="tpl3">
+    {{each result v i}}
+        <div class="pinglun clearfix">
+                <div class="pic">
+                   <div class="img_box fl">
+
+                   </div>
+                   <div class="text">
+
+                   </div>
+                </div>
+            </div>
+
+        <div class="pinglun_text">
+                <p class="comName">
+                        {{v.comName}}：
+                        <span >
+                                <i class="fa fa-star" ></i>
+                                <i class="fa fa-star" ></i>
+                                <i class="fa fa-star" ></i>
+                                <i class="fa fa-star" ></i>
+                                <i class="fa fa-star" ></i>
+                            </span>
+                            <span class="fr">
+                                {{v.comTime}}
+                            </span>
+                </p>
+                <p class="comContent">外观：{{v.comContent}}</p>
+        </div>
+
+            {{/each}}
+</script>
+
+
+
+
+
+
+<script src="./lib/jquery/jquery.min.js"></script>
+<script src="./lib/zepto/zepto.min.js"></script>
+<script src="./lib/mui/js/mui.min.js"></script>
+<script src="./lib/template-web.js"></script>
+<script src="./js/brand.js"></script>
+
+</html>

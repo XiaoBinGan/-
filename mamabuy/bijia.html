@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>妈妈买</title>
+    <link rel="stylesheet" href="./lib/mui/css/mui.css">
+    <link rel="stylesheet" href="./lib/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div class="mm_container">
+        <div class="mm_header">
+            <div class="logo fl">
+                <a href="index.html">
+                    <img src="images/header_logo.png" alt="">
+                </a>
+            </div>
+            <div class="appdown fr">
+                <a href="javascript:;">
+                    <img src="images/header_app.png" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="mm_mian">
+            <!--s=表单搜索-->
+            <div class="form-search">
+                <form action="#">
+                    <input type="search" placeholder="请输入你想要的商品">
+                    <button>搜索</button>
+                </form>
+            </div>
+            <!--e=表单搜索-->
+            <!--s=面包屑导航-->
+
+            <div class="product-list-title">
+                                     
+                    <!--等待填补-->
+
+
+ 
+            </div>
+            <!--e=面包屑导航-->
+            
+            <!--s=product-->
+            <div class="recommen-product-list product-list cu-list">
+                <div class="mm_product">
+              
+              
+                    <!--等待填补-->
+
+
+
+                </div>
+
+            </div>
+            <!--e=product-->
+            <!--s=footer-->
+        </div>
+        <!--e=footer-->
+        <div class="footer clearfix">
+            <div class="foot_top">
+                <a href="javascript:;">登录</a>
+                <a href="javascript:;">注册</a>
+                <a href="#">
+                    <img src="http://www.zuyushop.com/wap/images/top.jpg" width="15" height="15">返回顶部
+                </a>
+            </div>
+            <p>
+                <a href="javascript:;" style="color: Red;">手机APP下载</a>
+                <a href="index.html">慢慢买手机版</a> -- 掌上比价平台
+            </p>
+            <p>m.manmanbuy.com</p>
+        </div>
+
+
+    </div>
+    </div>
+
+</body>
+
+
+
+
+
+
+
+<script type="text/html" id="tpl1">
+    {{each result v i }}
+    <a href="index.html">首页></a>
+    <a href="category.html">电视></a>
+    <a href="">{{v.productName}}</a>
+    {{/each}}
+</script>
+
+
+
+<script type="text/html" id="tpl">
+{{each result v i }}
+        <div class="jd"  >
+            <div href="bijia.html?productid={{v.productId}}" class="clearfix">
+
+
+            <div class="introduce">
+                <p class="title-name">{{v.productName}}</p>
+                <p>{{v.productPrice}}</p>
+                <p>{{v.productQuote}} <span>{{v.productCom}}</span> </p>
+            </div>
+            
+            <div class="img_boxss ">
+                    {{@v.productImg}}
+                            <img src="http://www.zuyushop.com/wap/images/sc.jpg"  class="sc"></div>
+  
+            </div>
+
+        </div>       
+             <div class="tab clearfix">
+                <a href="#">比价购买</a>
+                <a href="#">产品参数</a>
+                <a href="#">评价(2322)</a>
+            </div>
+            <div class="jd_logo"> 
+                   {{@v.bjShop}}
+            </div>
+            <div class="not">
+                
+                    * 实际价格以各网站列出的实时售价为准，我们提供的价格可能有数小时至数日的延迟。
+                    
+            </div>
+            <div class="evaluate">网友评价</div>
+            <div class="net_friend">
+
+
+            </div>
+         
+        </li>
+{{/each}}
+</script>
+
+<script type="text/html" id="tpl3">
+    {{each result v i}}
+        <div>
+            <span >{{v.comName}}</span>   
+            <span class="fr">{{v.comTime}}</span>   
+       </div>
+       <p class="p1">{{v.comFrom}}</p>
+       <p class="text">{{v.comContent}}</p>
+{{/each}}
+<div class="more">
+    <a href="" class="mui-btn mui-btn-default">查看更多评价</a>
+</div>
+</script>
+
+
+
+
+
+
+
+
+
+<script src="./lib/jquery/jquery.min.js"></script>
+<script src="./lib/zepto/zepto.min.js"></script>
+<script src="./lib/mui/js/mui.min.js"></script>
+<script src="./lib/template-web.js"></script>
+<script src="./js/bijia.js"></script>
+
+</html>
+
+
+     
